@@ -1,7 +1,8 @@
 #include <stdio.h>
 /**
- * Descrip\ main -Prints out.
- * Return\ 0. 
+ * main - Entry point of the program
+ * it is so fan
+ * Return: Always 0 (Success)
  */
 int main(void)
 {
