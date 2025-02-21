@@ -8,11 +8,11 @@
 */
 void print_alphabet(void)
 {
-char alphabet = 'a';
-while (alphabet <= 'z')
+char letter;
+
+for (letter = 'a'; letter <= 'z'; letter++)
 {
-putchar(alphabet);
-alphabet++;
+write(1, &letter, 1);
 }
-putchar('\n');
+write(1, "\n", 1);
 }
