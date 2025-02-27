@@ -8,4 +8,9 @@ void swap_int(int *a, int *b);
 size_t _strlen(const char *str);
 void _puts(char *str);
 void print_rev(char *s);
+void puts2(char *str);
+void puts_half(char *str);
+char *_strcpy(char *dest, char *src);
+int _atoi(char *s);
+
 #endif
