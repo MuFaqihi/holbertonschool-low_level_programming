@@ -57,3 +57,17 @@ This project implements the `_strspn` function, which calculates the length of t
   - `s`: The string to search.
   - `accept`: The string containing the acceptable characters.
 - It returns the number of bytes in the initial segment of `s` that are composed solely of characters from `accept`.
+
+# 4. strpbrk
+
+## Project Overview:
+
+This project implements the `_strpbrk` function, which searches a string for the first occurrence of any byte from a set of accepted bytes.
+
+## Functionality:
+
+- The function takes two strings:
+  - `s`: The string to search through.
+  - `accept`: The set of accepted bytes to search for.
+- It returns a pointer to the first byte in `s` that matches any byte in `accept`. If no match is found, it returns `NULL`.
+
