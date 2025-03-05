@@ -6,24 +6,26 @@
  * @needle: character array (keyword)
  *
  * Return: character array
- */
+*/
 
 char *_strstr(char *haystack, char *needle)
 {
 while (*haystack != '\0')
 {
-char *duplicate = haystack;
+char *h = haystack;
+char *n = needle;
 
-while (*haystack == *needle && *haystack != '\0' && *needle != '\0')
+while (*h == *n && *h != '\0' && *n != '\0')
 {
-needle++;
-haystack++;
+h++;
+n++;
 }
-if (!*needle != '\0')
+if (*n == '\0')
 {
-return (duplicate);
+return (haystack);
 }
 haystack++;
 }
 return (0);
 }
+
