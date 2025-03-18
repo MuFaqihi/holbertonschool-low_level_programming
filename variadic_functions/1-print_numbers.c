@@ -4,7 +4,6 @@
 
 /**
  * print_numbers - Prints numbers from 0 to 9
- * print_strings - Print out all given strings
  * @separator: String to print between other strings
  * @n: Number of strings being printed
 */
