@@ -1,32 +1,34 @@
 #include "main.h"
 
 /**
- * print_binary - Entry point.
- * @n:pointer value.
- * Return: Always 0.
-*/
+ * print_binary - Entry Point
+ * @n: dec input
+ * Return: 0
+ */
 void print_binary(unsigned long int n)
 {
+	int i = 0, count, k, temp;
+
 	if (n == 0)
 	{
-		_putchar('0');
+		printf("0");
 		return;
 	}
-	bin_print(n);
-}
-/**
- * bin_print - prints the binary in reverse
- * @n: base 10 number
- */
-void bin_print(unsigned long int n)
-{
-	if (n == 0)
+
+	temp = n;
+
+	while (temp != 0)
 	{
-		return;
+		i++;
+		temp = temp >> 1;
 	}
-	else
+
+	for (count = i - 1; count >= 0; count--)
 	{
-		bin_print(n >> 1);
+		k = n >> count;
+		if (k & 1)
+			printf("1");
+		else
+			printf("0");
 	}
-	_putchar((n & 1) + '0');
 }
